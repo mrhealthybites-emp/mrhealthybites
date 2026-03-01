@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRHEALTHYBITES | Gestión de Franquicias</title>
+    <style>
+        /* Paleta de Colores Corporativa */
+        :root {
+            --primary: #1A3021;    /* Verde Bosque Profundo */
+            --secondary: #D4A373;  /* Dorado/Bronce Suave */
+            --light: #F8F9FA;      /* Gris Muy Claro para fondos */
+            --text-dark: #212529;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            margin: 0;
+            color: var(--text-dark);
+            background-color: var(--white);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Navegación Profesional */
+        header {
+            background-color: var(--primary);
+            padding: 1.5rem 10%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 3px solid var(--secondary);
+        }
+
+        .brand-name {
+            color: var(--white);
+            font-weight: 800;
+            font-size: 1.4rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        /* Hero Section - Minimalista */
+        .hero {
+            background-color: var(--light);
+            padding: 100px 10%;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            max-width: 700px;
+            line-height: 1.1;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+        }
+
+        /* Secciones de Contenido */
+        .container {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            color: var(--primary);
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 3px;
+            background: var(--secondary);
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+        }
+
+        .grid-ops {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        .op-card {
+            border-top: 4px solid var(--primary);
+            padding: 30px;
+            background: var(--light);
+            transition: transform 0.3s ease;
+        }
+
+        .op-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+        }
+
+        .op-card h3 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        /* Footer con Disclaimer Legal */
+        footer {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 60px 10% 20px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .legal-box {
+            font-size: 0.75rem;
+            opacity: 0.5;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .btn-contact {
+            background-color: var(--secondary);
+            color: var(--white);
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand-name">MRHEALTHYBITES</div>
+    </header>
+
+    <section class="hero">
+        <h1>Excelencia en la Operación de Retail de Bienestar</h1>
+        <p>Especialistas en la administración y optimización de franquicias de alimentación saludable en el territorio ecuatoriano.</p>
+        <a href="mailto:info@mrhealthybites.com" class="btn-contact">Contactar con Gerencia</a>
+    </section>
+
+    <div class="container">
+        <h2 class="section-title">Nuestra Gestión Operativa</h2>
+        <div class="grid-ops">
+            <div class="op-card">
+                <h3>Administración de Puntos de Venta</h3>
+                <p>Garantizamos que cada unidad operativa cumpla con los estándares internacionales de servicio y calidad.</p>
+            </div>
+            <div class="op-card">
+                <h3>Control de Calidad</h3>
+                <p>Auditorías constantes y supervisión de procesos para asegurar la frescura del producto final.</p>
+            </div>
+            <div class="op-card">
+                <h3>Capital Humano</h3>
+                <p>Reclutamiento y capacitación de personal bajo una cultura de excelencia y bienestar.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>MRHEALTHYBITES S.A.</h3>
+                <p>Sede Corporativa: Quito, Ecuador</p>
+            </div>
+            <div>
+                <p><strong>Operaciones 2026</strong></p>
+                <p>Gestión de Franquicias | Logística | Retail</p>
+            </div>
+        </div>
+        
+        <div class="legal-box">
+            MRHEALTHYBITES S.A. es una entidad jurídica independiente dedicada a la prestación de servicios de administración y operación de franquicias. Las marcas comerciales que operamos en nuestros puntos de venta son propiedad exclusiva de sus respectivos dueños y se gestionan bajo acuerdos de sub-franquicia legalmente constituidos.
+        </div>
+    </footer>
+
+</body>
+</html>
